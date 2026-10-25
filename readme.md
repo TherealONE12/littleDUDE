@@ -14,6 +14,8 @@ I made this for Jame Gam, a Game Jam, where the theme was "I'm just a little guy
 
 Click into the game once after it loads, otherwise the browser won't give it your mouse. Desktop browser recommended.
 
+Check it out at https://therealallinone.itch.io/little-dude
+
 ## Made with
 
 Godot 4.7.2. The code is mine, the 3D models are not (see below).
