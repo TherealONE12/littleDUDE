@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="littleDude"
-run/main_scene="uid://dcrof67saevx0"
+run/main_scene="uid://cfi31xjnycrb2"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cfi31xjnycrb2"]
+
+[ext_resource type="Script" uid="uid://bu2icta1m4uyn" path="res://homescreen.gd" id="1_a33i8"]
+[ext_resource type="Texture2D" uid="uid://ca1l575b25lxb" path="res://Homescreen.png" id="1_tq0vd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0bbe5"]
+font_size = 30
+font_color = Color(2.887845e-06, 0.72103816, 0.9057328, 1)
+
+[node name="Node2D" type="Node2D" unique_id=1950170159]
+script = ExtResource("1_a33i8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1292402096]
+position = Vector2(570, 335.00003)
+scale = Vector2(1.2417963, 1.2570423)
+texture = ExtResource("1_tq0vd")
+
+[node name="Label" type="Label" parent="." unique_id=1981625241]
+offset_left = 509.0
+offset_top = 39.0
+offset_right = 730.0
+offset_bottom = 81.0
+text = "Find your Stuff!"
+label_settings = SubResource("LabelSettings_0bbe5")
+
+[node name="Button" type="Button" parent="." unique_id=1119630239]
+offset_left = 537.0
+offset_top = 504.0
+offset_right = 679.0
+offset_bottom = 583.0
+action_mode = 0
+text = "Play"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

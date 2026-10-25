@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dcrof67saevx0"]
 
 [ext_resource type="Script" uid="uid://c85hp3pp4urak" path="res://character_body_3d.gd" id="1_8as1s"]
+[ext_resource type="Script" uid="uid://dnctrvbf5g1qm" path="res://parkour.gd" id="1_inv1g"]
 [ext_resource type="PackedScene" uid="uid://dak1i3gj11x35" path="res://assets/3d/Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk.glb" id="2_h85x6"]
 [ext_resource type="PackedScene" uid="uid://b0mimvfwe1djl" path="res://assets/3d/Ceiling Light by Quaternius - sRNcgQFbLB.glb" id="3_ili6x"]
 [ext_resource type="PackedScene" uid="uid://dxfo2sptvyhrb" path="res://assets/3d/Light Ceiling by Quaternius - NNlnaiDJIh.glb" id="4_06hjh"]
@@ -38,11 +39,90 @@ reflected_light_source = 2
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0bbe5"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_bcuvt"]
+size = Vector3(0.9519348, 1.4365234, 1.3719482)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uc1rx"]
+size = Vector3(4.798279, 1, 1.6397705)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n6j3u"]
+size = Vector3(3.0169678, 1, 1.5001221)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sa710"]
+size = Vector3(1.34375, 3.1776123, 1.321167)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jrcns"]
+size = Vector3(3.376709, 2.2225647, 1.9107056)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jwyj3"]
+size = Vector3(1, 5.0024414, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k4a3d"]
+size = Vector3(6.2733154, 2.3172607, 4.8725586)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5nxb7"]
+size = Vector3(5.277588, 2.000122, 4.666992)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rges3"]
+size = Vector3(1.3330078, 1, 5.0908203)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hrmnw"]
+size = Vector3(3.3448486, 2.718933, 2.902588)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ucsib"]
+size = Vector3(1.7834473, 1.1679688, 1.6711426)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g5l8r"]
+size = Vector3(3.2313232, 1.4053955, 4.106659)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0xxoe"]
+size = Vector3(5.4399414, 2.0827637, 3.557129)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y4yms"]
+size = Vector3(2.1971436, 3.8538818, 7.725586)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_145gv"]
+size = Vector3(2.165039, 2.5424805, 2.0670776)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lgapg"]
+size = Vector3(8.118652, 6.5323486, 5.8520203)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_0bbe5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pntrb"]
+size = Vector3(1.9383545, 1, 1.8168945)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jsgg8"]
+size = Vector3(1.8774414, 1, 1.2148438)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0bbe5"]
+height = 0.99487305
+radius = 1.5351563
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_qscog"]
+height = 0.38861084
+radius = 1.0209961
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_umnb3"]
+size = Vector3(2.6131592, 1.9151611, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k2fey"]
+size = Vector3(5.1973877, 4.040039, 4.170044)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qscog"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wwfwh"]
+shading_mode = 0
+albedo_color = Color(0.8461777, 0, 0.076841496, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kikqp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_icp5a"]
+shading_mode = 0
+albedo_color = Color(0.9607843, 0, 0.19607843, 1)
+
 [node name="Node3D" type="Node3D" unique_id=1246688159]
+script = ExtResource("1_inv1g")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1514961096]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 46.15885, 0)
@@ -52,17 +132,17 @@ shadow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=220712836]
 environment = SubResource("Environment_0bbe5")
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=879361030]
+[node name="Player" type="CharacterBody3D" parent="." unique_id=879361030]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.8100181, -5.2110643)
 script = ExtResource("1_8as1s")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=939585728]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=939585728]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0142744, 0.05879152, 0.24645448)
 shape = SubResource("CapsuleShape3D_0bbe5")
 
-[node name="CameraPivot" type="Node3D" parent="CharacterBody3D" unique_id=1886113168]
+[node name="CameraPivot" type="Node3D" parent="Player" unique_id=1886113168]
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/CameraPivot" unique_id=500041014]
+[node name="Camera3D" type="Camera3D" parent="Player/CameraPivot" unique_id=500041014]
 
 [node name="Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk" parent="." unique_id=511878839 instance=ExtResource("2_h85x6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.084164, 2.8520136, -38.703663)
@@ -163,35 +243,83 @@ spot_angle_attenuation = 0.17677696
 [node name="Gummy Bear by Poly by Google - 5zl16PPAItW" parent="." unique_id=2142138071 instance=ExtResource("5_jsal4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6963558, 2.4463997, -42.99926)
 
+[node name="Area3D" type="Area3D" parent="Gummy Bear by Poly by Google - 5zl16PPAItW" unique_id=1042585840 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Gummy Bear by Poly by Google - 5zl16PPAItW/Area3D" unique_id=1214483462]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65132046, 0)
+shape = SubResource("BoxShape3D_bcuvt")
+
 [node name="Gummy Bear by Poly by Google - 5zl16PPAItW2" parent="." unique_id=74046946 instance=ExtResource("5_jsal4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8003612, 2.4463997, -43.0798)
+
+[node name="Area3D" type="Area3D" parent="Gummy Bear by Poly by Google - 5zl16PPAItW2" unique_id=1235422361 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Gummy Bear by Poly by Google - 5zl16PPAItW2/Area3D" unique_id=1765868881]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65132046, 0)
+shape = SubResource("BoxShape3D_bcuvt")
 
 [node name="Cooking Spatula by Kenney - VMluJiBnkx" parent="." unique_id=899569304 instance=ExtResource("6_gavd7")]
 transform = Transform3D(0.03682706, 0.057181288, 0.99768436, 0.9969083, 0.06723948, -0.04065218, -0.06940832, 0.99609697, -0.05452828, -1.6744034, 5.224248, -43.006897)
 
+[node name="Area3D" type="Area3D" parent="Cooking Spatula by Kenney - VMluJiBnkx" unique_id=1619643455 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cooking Spatula by Kenney - VMluJiBnkx/Area3D" unique_id=111886267]
+transform = Transform3D(1.0000097, 4.6938658e-07, -1.2246892e-07, 2.8312206e-07, 1.0000027, 1.6391277e-07, 2.3283064e-09, -4.0233135e-07, 1.0000119, -0.011609077, 0.07324219, 0.017822146)
+shape = SubResource("BoxShape3D_uc1rx")
+
 [node name="Breakfast by Ashley Alicea - adp5MvenMQm" parent="." unique_id=1560661167 instance=ExtResource("7_8ww00")]
 transform = Transform3D(0.6604274, 0.11575004, 0.7419147, -0.0444164, 0.99233925, -0.11528209, -0.74957484, 0.043182313, 0.660509, -15.677409, 2.9543335, -34.02638)
+
+[node name="Area3D" type="Area3D" parent="Breakfast by Ashley Alicea - adp5MvenMQm" unique_id=1444533834 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Breakfast by Ashley Alicea - adp5MvenMQm/Area3D" unique_id=192591030]
+transform = Transform3D(0.9478973, -0.15806052, 0.27666625, 0.1546888, 0.9873885, 0.034113843, -0.27858123, 0.010461383, 0.960366, -0.29897022, -0.053161383, 0.34568024)
+shape = SubResource("BoxShape3D_n6j3u")
 
 [node name="Blender by Poly by Google - 5on5mJSu0gT" parent="." unique_id=308181394 instance=ExtResource("8_ohjvl")]
 transform = Transform3D(0.6390412, 0, -0.76917255, 0, 1, 0, 0.76917255, 0, 0.6390412, -18.182089, 2.4463327, -42.090504)
 
+[node name="Area3D" type="Area3D" parent="Blender by Poly by Google - 5on5mJSu0gT" unique_id=1946486854 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blender by Poly by Google - 5on5mJSu0gT/Area3D" unique_id=2013979371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17185974, 1.0888062, -0.07574463)
+shape = SubResource("BoxShape3D_sa710")
+
 [node name="Root Scene4" parent="." unique_id=303513224 instance=ExtResource("10_pbktr")]
 transform = Transform3D(1.5235953, 0.5332322, 0, -0.58893013, 1.3795017, 0, 0, 0, 1.530043, 49.58929, -1.9617788, -24.630722)
+
+[node name="Area3D" type="Area3D" parent="Root Scene4" unique_id=540756826 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene4/Area3D" unique_id=2053041021]
+transform = Transform3D(1, -1.4901165e-07, 0, 1.4901165e-07, 1, 0, 0, 0, 1, 0.4713173, -0.07029724, 0.013519287)
+shape = SubResource("BoxShape3D_jrcns")
 
 [node name="Lava Lamp by Jarlan Perez - 2ey-GJxzXQN" parent="." unique_id=1884074353 instance=ExtResource("11_t60qf")]
 transform = Transform3D(1.9404026, 0, 0, 0, 0.8, 0, 0, 0, 2.8995569, 31.067852, 2.3025112, -18.883118)
 
+[node name="Area3D" type="Area3D" parent="Lava Lamp by Jarlan Perez - 2ey-GJxzXQN" unique_id=1770803371 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lava Lamp by Jarlan Perez - 2ey-GJxzXQN/Area3D" unique_id=21794327]
+transform = Transform3D(1, 0, 0, 0, 0.9999926, 0, 0, 0, 0.99999183, 0, -0.5080521, 0)
+shape = SubResource("BoxShape3D_jwyj3")
+
 [node name="Pancakes by Kenney - 7ymlduImaC" parent="." unique_id=1494387281 instance=ExtResource("12_7r38r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.899574, 0.8779341, -18.432652)
 
-[node name="Pancakes by Kenney - 7ymlduImaC2" parent="." unique_id=1594820501 instance=ExtResource("12_7r38r")]
-transform = Transform3D(0.18005738, 0, 0.9836561, 0, 1, 0, -0.9836561, 0, 0.18005738, 33.945843, 1.4985743, -18.73575)
+[node name="Pancakes by Kenney - 7ymlduImaC2" parent="Pancakes by Kenney - 7ymlduImaC" unique_id=1594820501 instance=ExtResource("12_7r38r")]
+transform = Transform3D(0.18005738, 0, 0.9836561, 0, 1, 0, -0.9836561, 0, 0.18005738, -0.95373154, 0.62064016, -0.30309868)
 
-[node name="Pancakes by Kenney - 7ymlduImaC3" parent="." unique_id=854492313 instance=ExtResource("12_7r38r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.592587, 1.7705297, -19.066383)
+[node name="Pancakes by Kenney - 7ymlduImaC3" parent="Pancakes by Kenney - 7ymlduImaC" unique_id=854492313 instance=ExtResource("12_7r38r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3069878, 0.89259565, -0.63373184)
 
-[node name="Pancakes by Kenney - 7ymlduImaC4" parent="." unique_id=1084350593 instance=ExtResource("12_7r38r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.42782, 0.84892535, -19.569061)
+[node name="Pancakes by Kenney - 7ymlduImaC4" parent="Pancakes by Kenney - 7ymlduImaC" unique_id=1084350593 instance=ExtResource("12_7r38r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.471756, -0.029008746, -1.1364098)
+
+[node name="Area3D" type="Area3D" parent="Pancakes by Kenney - 7ymlduImaC" unique_id=1282721507 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pancakes by Kenney - 7ymlduImaC/Area3D" unique_id=1824804287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.597229, 0.590271, -0.022705078)
+shape = SubResource("BoxShape3D_k4a3d")
 
 [node name="Tool Axe by Kenney - GPE2JUkbfW" parent="." unique_id=955237389 instance=ExtResource("13_wrihl")]
 transform = Transform3D(1, 0, 0, 0, -0.0618352, -0.9980864, 0, 0.9980864, -0.0618352, 29.227316, 5.2518864, -21.013987)
@@ -206,20 +334,50 @@ spot_angle = 76.94861
 [node name="Pillow by Poly by Google - f60emm1Xkas" parent="." unique_id=1040732288 instance=ExtResource("13_ohjvl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.502224, -2.7157397, -26.136858)
 
+[node name="Area3D" type="Area3D" parent="Pillow by Poly by Google - f60emm1Xkas" unique_id=1505979939 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pillow by Poly by Google - f60emm1Xkas/Area3D" unique_id=300408771]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010131836, 0.50006104, -0.010253906)
+shape = SubResource("BoxShape3D_5nxb7")
+
 [node name="Rolling Pin by MilkAndBanana - nbI0WJqJN3" parent="." unique_id=319582789 instance=ExtResource("14_pbktr")]
 transform = Transform3D(0.06921245, -0.5667456, 0.9171716, 0.0392896, 0.9983774, 0.5206477, -1.480618, 0, 0.056689657, -10.771425, -1.9675679, -37.609734)
 
-[node name="Rolling Pin by MilkAndBanana - nbI0WJqJN4" parent="." unique_id=1865578795 instance=ExtResource("14_pbktr")]
-transform = Transform3D(0.4803397, -0.68790483, 1.3614678, -0.7289352, 0.97449005, 0.58535343, -1.3022698, -0.7726705, 0.118552804, -11.10942, -2.1829224, -37.072342)
+[node name="Rolling Pin by MilkAndBanana - nbI0WJqJN4" parent="Rolling Pin by MilkAndBanana - nbI0WJqJN3" unique_id=1865578795 instance=ExtResource("14_pbktr")]
+transform = Transform3D(0.8791058, 0.51611227, -0.026518501, -0.75873643, 1.0340055, -0.14203957, -0.011465572, -0.15003538, 1.398651, -0.37639236, -0.017791033, -0.35110855)
+
+[node name="Area3D" type="Area3D" parent="Rolling Pin by MilkAndBanana - nbI0WJqJN3" unique_id=991203713 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Rolling Pin by MilkAndBanana - nbI0WJqJN3/Area3D" unique_id=982526982]
+transform = Transform3D(1, 1.205315e-09, 1.0415091e-14, -1.205315e-09, 1, 8.640959e-06, -1.3552527e-20, -8.640959e-06, 1, -0.1665039, 9.536743e-07, -0.62841415)
+shape = SubResource("BoxShape3D_rges3")
 
 [node name="Pot Stew by Kenney - LdMz9bs08D" parent="." unique_id=823571544 instance=ExtResource("15_t60qf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5405493, -2.9983253, -37.418648)
 
+[node name="Area3D" type="Area3D" parent="Pot Stew by Kenney - LdMz9bs08D" unique_id=1604966930 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pot Stew by Kenney - LdMz9bs08D/Area3D" unique_id=413310068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08001709, 0.85946655, 0.14099121)
+shape = SubResource("BoxShape3D_hrmnw")
+
 [node name="Root Scene5" parent="." unique_id=647808121 instance=ExtResource("16_7r38r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.707732, 2.5016696, -41.07982)
 
+[node name="Area3D" type="Area3D" parent="Root Scene5" unique_id=258218663 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene5/Area3D" unique_id=1625068668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008178711, 0.083984375, -0.11047363)
+shape = SubResource("BoxShape3D_ucsib")
+
 [node name="Peanut butter and jelly by Poly by Google - eqZmggirjpp" parent="." unique_id=369190752 instance=ExtResource("17_wrihl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.654339, 2.548048, -46.617985)
+
+[node name="Area3D" type="Area3D" parent="Peanut butter and jelly by Poly by Google - eqZmggirjpp" unique_id=378564744 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Peanut butter and jelly by Poly by Google - eqZmggirjpp/Area3D" unique_id=204435012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09283447, 0.20269775, -0.79411316)
+shape = SubResource("BoxShape3D_g5l8r")
 
 [node name="Pillow by Poly by Google - f60emm1Xkas2" parent="." unique_id=1242292407 instance=ExtResource("13_ohjvl")]
 transform = Transform3D(0.95580006, 0.29401734, 0, -0.29401734, 0.95580006, 0, 0, 0, 1, 31.798258, -2.0742843, -37.670086)
@@ -236,8 +394,20 @@ transform = Transform3D(0.95580006, -0.29401734, 0, 0.29401734, 0.95580006, 0, 0
 [node name="Baking tray by Poly by Google - 49EAwsyK6PR" parent="." unique_id=768508636 instance=ExtResource("18_wrihl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.852604, 0.51340896, -39.27465)
 
+[node name="Area3D" type="Area3D" parent="Baking tray by Poly by Google - 49EAwsyK6PR" unique_id=1091057957 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Baking tray by Poly by Google - 49EAwsyK6PR/Area3D" unique_id=1238776927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1081543, 1.2139893, 0.068115234)
+shape = SubResource("BoxShape3D_0xxoe")
+
 [node name="Sauce Pan by MilkAndBanana - 4oMIMFY6l5" parent="." unique_id=1102683638 instance=ExtResource("19_ksvkm")]
 transform = Transform3D(-0.685337, -0.629684, 0.3658025, 0.31293806, -0.70822966, -0.63283557, 0.65755844, -0.31923205, 0.68242806, 35.50542, -0.40278745, -35.856026)
+
+[node name="Area3D" type="Area3D" parent="Sauce Pan by MilkAndBanana - 4oMIMFY6l5" unique_id=529219799 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sauce Pan by MilkAndBanana - 4oMIMFY6l5/Area3D" unique_id=2082369936]
+transform = Transform3D(1, -1.4901161e-08, -1.1920929e-07, -4.4703484e-08, 1, 2.9802322e-08, -1.1920929e-07, -4.4703484e-08, 1, 0.5985756, 0.26970768, 0.562974)
+shape = SubResource("BoxShape3D_y4yms")
 
 [node name="Root Scene6" parent="." unique_id=1723730269 instance=ExtResource("20_6jt8u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.743942, -3.2318683, -35.297012)
@@ -245,11 +415,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.743942, -3.2318683, -35.29
 [node name="Pickle jar by Poly by Google - ea-GaiMlyYQ" parent="." unique_id=786347452 instance=ExtResource("21_ko2i4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1844296, 3.2388337, -28.74447)
 
+[node name="Area3D" type="Area3D" parent="Pickle jar by Poly by Google - ea-GaiMlyYQ" unique_id=325667156 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pickle jar by Poly by Google - ea-GaiMlyYQ/Area3D" unique_id=115028963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19189453, 0.77124, 0.047027588)
+shape = SubResource("BoxShape3D_145gv")
+
 [node name="Cake by Zsky - IIRsjGB8mA" parent="." unique_id=1333685465 instance=ExtResource("22_fbgfp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7498071, 0.4663868, -37.339123)
 
+[node name="Area3D" type="Area3D" parent="Cake by Zsky - IIRsjGB8mA" unique_id=1033944046 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cake by Zsky - IIRsjGB8mA/Area3D" unique_id=2071996103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9138181, -1.3174438, 0.23799133)
+shape = SubResource("BoxShape3D_lgapg")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=830929012]
-transform = Transform3D(4.553043, 0.8889265, -1.6561053e-07, 2.297783, -1.7614025, 0, 3.9803965e-07, 7.771243e-08, 1.8943635, -11.708451, -3.0985649, -37.052303)
+transform = Transform3D(4.553043, 0.8889265, -2.8604094e-07, 2.2977827, -1.7614025, 6.4026386e-15, 6.8749034e-07, 1.3422417e-07, 1.8943635, -11.708451, -3.0985649, -37.052303)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=393957242]
 shape = SubResource("BoxShape3D_0bbe5")
@@ -257,23 +439,85 @@ shape = SubResource("BoxShape3D_0bbe5")
 [node name="Root Scene7" parent="." unique_id=537305590 instance=ExtResource("23_ko2i4")]
 transform = Transform3D(-0.8851316, -0.46534088, 0, 0.46534088, -0.8851316, 0, 0, 0, 1, -10.044124, 2.107832, -40.970142)
 
+[node name="Area3D" type="Area3D" parent="Root Scene7" unique_id=15537432 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene7/Area3D" unique_id=2035424063]
+transform = Transform3D(0.99999917, -1.4901161e-07, 0, 1.4901161e-07, 0.99999917, 0, 0, 0, 1, -0.23541832, 1.4305115e-06, -0.111572266)
+shape = SubResource("BoxShape3D_pntrb")
+
 [node name="Root Scene8" parent="." unique_id=567592173 instance=ExtResource("24_fbgfp")]
 transform = Transform3D(-0.38574526, 0, 0.92260534, 0, 1, 0, -0.92260534, 0, -0.38574526, -16.652994, 2.5016754, -28.395054)
+
+[node name="Area3D" type="Area3D" parent="Root Scene8" unique_id=2012544647 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene8/Area3D" unique_id=1953782776]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16429901, 0, -0.10742092)
+shape = SubResource("BoxShape3D_jsgg8")
 
 [node name="Root Scene9" parent="." unique_id=576344749 instance=ExtResource("25_37wjt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.367188, 0.5398762, -44.54532)
 
+[node name="Area3D" type="Area3D" parent="Root Scene9" unique_id=1895924669 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene9/Area3D" unique_id=1197974969]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5025635, 0)
+shape = SubResource("CylinderShape3D_0bbe5")
+
 [node name="Pie by Poly by Google - eu-vRr2-5dY" parent="." unique_id=1452404871 instance=ExtResource("26_inv1g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.658447, -0.8954451, -53.95616)
+
+[node name="Area3D" type="Area3D" parent="Pie by Poly by Google - eu-vRr2-5dY" unique_id=1407815690 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pie by Poly by Google - eu-vRr2-5dY/Area3D" unique_id=274493034]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5664978, 0)
+shape = SubResource("CylinderShape3D_qscog")
 
 [node name="Loaf by Kenney - IYIJGWlOiC" parent="." unique_id=734799754 instance=ExtResource("28_sc7ir")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.63758, -2.9983213, -54.059464)
 
+[node name="Area3D" type="Area3D" parent="Loaf by Kenney - IYIJGWlOiC" unique_id=1062678902 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Loaf by Kenney - IYIJGWlOiC/Area3D" unique_id=1080951881]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16644287, 0.45758057, 0)
+shape = SubResource("BoxShape3D_umnb3")
+
 [node name="Root Scene10" parent="." unique_id=1209190464 instance=ExtResource("29_5nxmh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.106243, -3.1301522, -51.71797)
+
+[node name="Area3D" type="Area3D" parent="Root Scene10" unique_id=1842700258 groups=["targets"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene10/Area3D" unique_id=1470714739]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14312744, 1.5200195, -0.03265381)
+shape = SubResource("BoxShape3D_k2fey")
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=1203909932]
 transform = Transform3D(11.202937, 0, 0, 0, 3.0788822, 0, 0, 0, 1, -14.313987, -1.6219285, 2.6334577)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=1291987114]
 shape = SubResource("BoxShape3D_qscog")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=251778811]
+
+[node name="Label" type="Label" parent="HUD" unique_id=1777606953]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 110.0
+offset_bottom = 51.0
+scale = Vector2(1.8701788, 1.1772705)
+
+[node name="Button" type="Button" parent="HUD" unique_id=461405224]
+offset_left = 1037.0
+offset_top = 7.0
+offset_right = 1143.0
+offset_bottom = 38.0
+action_mode = 0
+text = "Homescreen"
+
+[node name="Tracer" type="MeshInstance3D" parent="." unique_id=45207366]
+material_override = SubResource("StandardMaterial3D_wwfwh")
+
+[node name="Beam" type="MeshInstance3D" parent="." unique_id=287631041]
+mesh = SubResource("CylinderMesh_kikqp")
+surface_material_override/0 = SubResource("StandardMaterial3D_icp5a")
+
+[connection signal="button_down" from="HUD/Button" to="." method="_on_button_button_down"]
