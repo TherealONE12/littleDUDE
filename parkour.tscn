@@ -1,0 +1,279 @@
+[gd_scene format=3 uid="uid://dcrof67saevx0"]
+
+[ext_resource type="Script" uid="uid://c85hp3pp4urak" path="res://character_body_3d.gd" id="1_8as1s"]
+[ext_resource type="PackedScene" uid="uid://dak1i3gj11x35" path="res://assets/3d/Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk.glb" id="2_h85x6"]
+[ext_resource type="PackedScene" uid="uid://b0mimvfwe1djl" path="res://assets/3d/Ceiling Light by Quaternius - sRNcgQFbLB.glb" id="3_ili6x"]
+[ext_resource type="PackedScene" uid="uid://dxfo2sptvyhrb" path="res://assets/3d/Light Ceiling by Quaternius - NNlnaiDJIh.glb" id="4_06hjh"]
+[ext_resource type="PackedScene" uid="uid://ojy406a554kb" path="res://assets/3d/Gummy Bear by Poly by Google - 5zl16PPAItW.glb" id="5_jsal4"]
+[ext_resource type="PackedScene" uid="uid://bk4prtkvsuc3t" path="res://assets/3d/Cooking Spatula by Kenney - VMluJiBnkx.glb" id="6_gavd7"]
+[ext_resource type="PackedScene" uid="uid://c0gijjwv0lp06" path="res://assets/3d/Breakfast by Ashley Alicea - adp5MvenMQm.glb" id="7_8ww00"]
+[ext_resource type="PackedScene" uid="uid://ctqcbnqeiybki" path="res://assets/3d/Blender by Poly by Google - 5on5mJSu0gT.glb" id="8_ohjvl"]
+[ext_resource type="PackedScene" uid="uid://belb2abgfi3nb" path="res://assets/3d/Cooked ham by Kay Lousberg - Rp3QmAmSK1.glb" id="10_pbktr"]
+[ext_resource type="PackedScene" uid="uid://d0m33tq60q2s2" path="res://assets/3d/Lava Lamp by Jarlan Perez - 2ey-GJxzXQN.glb" id="11_t60qf"]
+[ext_resource type="PackedScene" uid="uid://ct7qwa1s8o00p" path="res://assets/3d/Pancakes by Kenney - 7ymlduImaC.glb" id="12_7r38r"]
+[ext_resource type="PackedScene" uid="uid://crs5wd3pgnvb0" path="res://assets/3d/Pillow by Poly by Google - f60emm1Xkas.glb" id="13_ohjvl"]
+[ext_resource type="PackedScene" uid="uid://5f8fmwluuo4i" path="res://assets/3d/Tool Axe by Kenney - GPE2JUkbfW.glb" id="13_wrihl"]
+[ext_resource type="PackedScene" uid="uid://dlub5xbmyjaof" path="res://assets/3d/Rolling Pin by MilkAndBanana - nbI0WJqJN3.glb" id="14_pbktr"]
+[ext_resource type="PackedScene" uid="uid://bade1l0wj4khe" path="res://assets/3d/Pot Stew by Kenney - LdMz9bs08D.glb" id="15_t60qf"]
+[ext_resource type="PackedScene" uid="uid://d4fy2yx4a3jea" path="res://assets/3d/Salmon by Quaternius - 2BeZAlQ73h.glb" id="16_7r38r"]
+[ext_resource type="PackedScene" uid="uid://8ygjf632ed0h" path="res://assets/3d/Peanut butter and jelly by Poly by Google - eqZmggirjpp.glb" id="17_wrihl"]
+[ext_resource type="PackedScene" uid="uid://f45dhg51qich" path="res://assets/3d/Baking tray by Poly by Google - 49EAwsyK6PR.glb" id="18_wrihl"]
+[ext_resource type="PackedScene" uid="uid://c7bgnheueahi2" path="res://assets/3d/Sauce Pan by MilkAndBanana - 4oMIMFY6l5.glb" id="19_ksvkm"]
+[ext_resource type="PackedScene" uid="uid://dg4p6a2b00kum" path="res://assets/3d/Stew Bowl by Kay Lousberg - C00LVDQkXt.glb" id="20_6jt8u"]
+[ext_resource type="PackedScene" uid="uid://dpkme8hp4hc3o" path="res://assets/3d/Pickle jar by Poly by Google - ea-GaiMlyYQ.glb" id="21_ko2i4"]
+[ext_resource type="PackedScene" uid="uid://ct5gjo73f1pt8" path="res://assets/3d/Cake by Zsky - IIRsjGB8mA.glb" id="22_fbgfp"]
+[ext_resource type="PackedScene" uid="uid://0dspaw4yv6lu" path="res://assets/3d/Cooking Pot by Quaternius - lMEdEOMg9L.glb" id="23_ko2i4"]
+[ext_resource type="PackedScene" uid="uid://bl08dery0unv6" path="res://assets/3d/Croissant by Isa Lousberg - PqyYJqkvPL.glb" id="24_fbgfp"]
+[ext_resource type="PackedScene" uid="uid://ba5sw166j2bd1" path="res://assets/3d/Pie by Nick Slough - L8cn9tTBm2.glb" id="25_37wjt"]
+[ext_resource type="PackedScene" uid="uid://dd1nc4ft51s1p" path="res://assets/3d/Pie by Poly by Google - eu-vRr2-5dY.glb" id="26_inv1g"]
+[ext_resource type="PackedScene" uid="uid://be345xorcrpws" path="res://assets/3d/Loaf by Kenney - IYIJGWlOiC.glb" id="28_sc7ir"]
+[ext_resource type="PackedScene" uid="uid://6rv4s8yw0tjg" path="res://assets/3d/Cauldron by Vaporworks - hUBrqAm5IP.glb" id="29_5nxmh"]
+
+[sub_resource type="Environment" id="Environment_0bbe5"]
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_sky_contribution = 0.5
+ambient_light_energy = 0.25
+reflected_light_source = 2
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0bbe5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0bbe5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qscog"]
+
+[node name="Node3D" type="Node3D" unique_id=1246688159]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1514961096]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 46.15885, 0)
+light_energy = 0.1
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=220712836]
+environment = SubResource("Environment_0bbe5")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=879361030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.8100181, -5.2110643)
+script = ExtResource("1_8as1s")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=939585728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0142744, 0.05879152, 0.24645448)
+shape = SubResource("CapsuleShape3D_0bbe5")
+
+[node name="CameraPivot" type="Node3D" parent="CharacterBody3D" unique_id=1886113168]
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/CameraPivot" unique_id=500041014]
+
+[node name="Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk" parent="." unique_id=511878839 instance=ExtResource("2_h85x6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.084164, 2.8520136, -38.703663)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk" unique_id=1083061673]
+transform = Transform3D(1, 0, 0, 0, -0.010097138, 0.99994904, 0, -0.99994904, -0.010097138, 2.4679947, 7.922393, -4.687397)
+light_energy = 7.05
+light_indirect_energy = 4.74
+shadow_enabled = true
+spot_range = 31.797834
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk" unique_id=14677264]
+transform = Transform3D(1, 0, 0, 0, -0.010097138, 0.99994904, 0, -0.99994904, -0.010097138, 2.4679947, 7.922393, -9.74765)
+light_energy = 7.05
+light_indirect_energy = 9.871
+shadow_enabled = true
+spot_range = 31.797834
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk" unique_id=564421765]
+transform = Transform3D(1, 0, 0, 0, -0.010097138, 0.99994904, 0, -0.99994904, -0.010097138, 2.4679947, 7.922393, -14.049461)
+light_energy = 7.05
+light_indirect_energy = 10.03
+shadow_enabled = true
+spot_range = 31.797834
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk" unique_id=1258784028]
+transform = Transform3D(1, 8.351872e-23, -4.371139e-08, -4.371139e-08, 1.9106855e-15, -1, 0, 1, 1.9106855e-15, 30.421951, 5.116741, -15.899647)
+light_energy = 3.44
+light_indirect_energy = 9.0
+shadow_enabled = true
+omni_range = 8.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk" unique_id=399416135]
+transform = Transform3D(1, 8.351872e-23, -4.371139e-08, -4.371139e-08, 1.9106855e-15, -1, 0, 1, 1.9106855e-15, 33.235214, 4.444705, 20.722157)
+light_energy = 3.44
+light_indirect_energy = 9.0
+shadow_enabled = true
+omni_range = 8.0
+
+[node name="Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk2" parent="." unique_id=520545085 instance=ExtResource("2_h85x6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.906818, 21.760818, -39.137924)
+
+[node name="Root Scene2" parent="." unique_id=1947857626 instance=ExtResource("4_06hjh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.572258, 14.332726, -25.643147)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Root Scene2" unique_id=1393875513]
+transform = Transform3D(1, 8.351872e-23, -4.371139e-08, -4.371139e-08, 1.9106855e-15, -1, 0, 1, 1.9106855e-15, 0.0053710938, -6.5671625, 1.3810272)
+light_energy = 2.765
+shadow_enabled = true
+omni_range = 203.283
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Root Scene2" unique_id=273640709]
+transform = Transform3D(1, 0, 0, 0, -0.99965733, 0.026176885, 0, -0.026176887, -0.9996573, -1.3231974, -5.4280243, 0.019399643)
+omni_range = 8.115943
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Root Scene2" unique_id=431018927]
+transform = Transform3D(0.70357823, 0.11869817, 0.70063436, -0.41339716, 0.87031317, 0.2676898, -0.57799697, -0.47798094, 0.6614029, 1.5350146, -3.7589607, 0.048864365)
+light_energy = 2.0
+shadow_enabled = true
+omni_range = 8.115943
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Root Scene2" unique_id=1448043329]
+transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, 0.006344795, -4.8744345, -1.4632454)
+light_energy = 2.0
+shadow_enabled = true
+omni_range = 8.115943
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Root Scene2" unique_id=2033996775]
+transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -1.4220066, -6.0472326, -0.03401375)
+light_energy = 2.0
+shadow_enabled = true
+omni_range = 8.115943
+
+[node name="Root Scene" parent="." unique_id=2057387022 instance=ExtResource("3_ili6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.409089, 14.940328, -6.5753794)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Root Scene" unique_id=382239244]
+transform = Transform3D(1, 0, 0, 0, -0.031127594, 0.9995154, 0, -0.9995154, -0.031127594, 0.15823197, -4.034314, 0.028354168)
+light_color = Color(1, 1, 0.6392157, 1)
+light_energy = 7.0
+shadow_enabled = true
+spot_range = 15.779172
+spot_angle_attenuation = 0.615573
+
+[node name="Root Scene3" parent="." unique_id=189561320 instance=ExtResource("3_ili6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7827244, 14.940328, -6.5753794)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Root Scene3" unique_id=989035350]
+transform = Transform3D(1, 0, 0, 0, -0.031127594, 0.9995154, 0, -0.9995154, -0.031127594, 0.15823197, -4.034314, 0.028354168)
+light_color = Color(1, 1, 0.6392157, 1)
+light_energy = 7.0
+shadow_enabled = true
+shadow_bias = 0.822
+spot_range = 50.0
+spot_angle = 53.33
+spot_angle_attenuation = 0.17677696
+
+[node name="Gummy Bear by Poly by Google - 5zl16PPAItW" parent="." unique_id=2142138071 instance=ExtResource("5_jsal4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6963558, 2.4463997, -42.99926)
+
+[node name="Gummy Bear by Poly by Google - 5zl16PPAItW2" parent="." unique_id=74046946 instance=ExtResource("5_jsal4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8003612, 2.4463997, -43.0798)
+
+[node name="Cooking Spatula by Kenney - VMluJiBnkx" parent="." unique_id=899569304 instance=ExtResource("6_gavd7")]
+transform = Transform3D(0.03682706, 0.057181288, 0.99768436, 0.9969083, 0.06723948, -0.04065218, -0.06940832, 0.99609697, -0.05452828, -1.6744034, 5.224248, -43.006897)
+
+[node name="Breakfast by Ashley Alicea - adp5MvenMQm" parent="." unique_id=1560661167 instance=ExtResource("7_8ww00")]
+transform = Transform3D(0.6604274, 0.11575004, 0.7419147, -0.0444164, 0.99233925, -0.11528209, -0.74957484, 0.043182313, 0.660509, -15.677409, 2.9543335, -34.02638)
+
+[node name="Blender by Poly by Google - 5on5mJSu0gT" parent="." unique_id=308181394 instance=ExtResource("8_ohjvl")]
+transform = Transform3D(0.6390412, 0, -0.76917255, 0, 1, 0, 0.76917255, 0, 0.6390412, -18.182089, 2.4463327, -42.090504)
+
+[node name="Root Scene4" parent="." unique_id=303513224 instance=ExtResource("10_pbktr")]
+transform = Transform3D(1.5235953, 0.5332322, 0, -0.58893013, 1.3795017, 0, 0, 0, 1.530043, 49.58929, -1.9617788, -24.630722)
+
+[node name="Lava Lamp by Jarlan Perez - 2ey-GJxzXQN" parent="." unique_id=1884074353 instance=ExtResource("11_t60qf")]
+transform = Transform3D(1.9404026, 0, 0, 0, 0.8, 0, 0, 0, 2.8995569, 31.067852, 2.3025112, -18.883118)
+
+[node name="Pancakes by Kenney - 7ymlduImaC" parent="." unique_id=1494387281 instance=ExtResource("12_7r38r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.899574, 0.8779341, -18.432652)
+
+[node name="Pancakes by Kenney - 7ymlduImaC2" parent="." unique_id=1594820501 instance=ExtResource("12_7r38r")]
+transform = Transform3D(0.18005738, 0, 0.9836561, 0, 1, 0, -0.9836561, 0, 0.18005738, 33.945843, 1.4985743, -18.73575)
+
+[node name="Pancakes by Kenney - 7ymlduImaC3" parent="." unique_id=854492313 instance=ExtResource("12_7r38r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.592587, 1.7705297, -19.066383)
+
+[node name="Pancakes by Kenney - 7ymlduImaC4" parent="." unique_id=1084350593 instance=ExtResource("12_7r38r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.42782, 0.84892535, -19.569061)
+
+[node name="Tool Axe by Kenney - GPE2JUkbfW" parent="." unique_id=955237389 instance=ExtResource("13_wrihl")]
+transform = Transform3D(1, 0, 0, 0, -0.0618352, -0.9980864, 0, 0.9980864, -0.0618352, 29.227316, 5.2518864, -21.013987)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1544399011]
+transform = Transform3D(1, 0, 0, 0, 0.009355008, -0.99995625, 0, 0.99995625, 0.009355008, -8.56819, 11.20784, -26.22533)
+light_energy = 5.0
+shadow_enabled = true
+spot_range = 19.910774
+spot_angle = 76.94861
+
+[node name="Pillow by Poly by Google - f60emm1Xkas" parent="." unique_id=1040732288 instance=ExtResource("13_ohjvl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.502224, -2.7157397, -26.136858)
+
+[node name="Rolling Pin by MilkAndBanana - nbI0WJqJN3" parent="." unique_id=319582789 instance=ExtResource("14_pbktr")]
+transform = Transform3D(0.06921245, -0.5667456, 0.9171716, 0.0392896, 0.9983774, 0.5206477, -1.480618, 0, 0.056689657, -10.771425, -1.9675679, -37.609734)
+
+[node name="Rolling Pin by MilkAndBanana - nbI0WJqJN4" parent="." unique_id=1865578795 instance=ExtResource("14_pbktr")]
+transform = Transform3D(0.4803397, -0.68790483, 1.3614678, -0.7289352, 0.97449005, 0.58535343, -1.3022698, -0.7726705, 0.118552804, -11.10942, -2.1829224, -37.072342)
+
+[node name="Pot Stew by Kenney - LdMz9bs08D" parent="." unique_id=823571544 instance=ExtResource("15_t60qf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5405493, -2.9983253, -37.418648)
+
+[node name="Root Scene5" parent="." unique_id=647808121 instance=ExtResource("16_7r38r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.707732, 2.5016696, -41.07982)
+
+[node name="Peanut butter and jelly by Poly by Google - eqZmggirjpp" parent="." unique_id=369190752 instance=ExtResource("17_wrihl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.654339, 2.548048, -46.617985)
+
+[node name="Pillow by Poly by Google - f60emm1Xkas2" parent="." unique_id=1242292407 instance=ExtResource("13_ohjvl")]
+transform = Transform3D(0.95580006, 0.29401734, 0, -0.29401734, 0.95580006, 0, 0, 0, 1, 31.798258, -2.0742843, -37.670086)
+
+[node name="Pillow by Poly by Google - f60emm1Xkas2" parent="Pillow by Poly by Google - f60emm1Xkas2" unique_id=2004793120 instance=ExtResource("13_ohjvl")]
+transform = Transform3D(0.99962515, 0.027375668, 0, -0.027375668, 0.99962515, 0, 0, 0, 1, 3.3959656, 1.0566292, -0.09365845)
+
+[node name="Pillow by Poly by Google - f60emm1Xkas" parent="Pillow by Poly by Google - f60emm1Xkas2" unique_id=1623982885 instance=ExtResource("13_ohjvl")]
+transform = Transform3D(0.9558, -0.2627335, 0.13197455, 0.2940173, 0.8541016, -0.4290266, 0, 0.44886652, 0.8935988, -0.1798191, -0.105700016, 3.346653)
+
+[node name="Pillow by Poly by Google - f60emm1Xkas3" parent="Pillow by Poly by Google - f60emm1Xkas2" unique_id=1019517923 instance=ExtResource("13_ohjvl")]
+transform = Transform3D(0.95580006, -0.29401734, 0, 0.29401734, 0.95580006, 0, 0, 0, 1, 0.4406147, 1.7010021, 0.53284836)
+
+[node name="Baking tray by Poly by Google - 49EAwsyK6PR" parent="." unique_id=768508636 instance=ExtResource("18_wrihl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.852604, 0.51340896, -39.27465)
+
+[node name="Sauce Pan by MilkAndBanana - 4oMIMFY6l5" parent="." unique_id=1102683638 instance=ExtResource("19_ksvkm")]
+transform = Transform3D(-0.685337, -0.629684, 0.3658025, 0.31293806, -0.70822966, -0.63283557, 0.65755844, -0.31923205, 0.68242806, 35.50542, -0.40278745, -35.856026)
+
+[node name="Root Scene6" parent="." unique_id=1723730269 instance=ExtResource("20_6jt8u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.743942, -3.2318683, -35.297012)
+
+[node name="Pickle jar by Poly by Google - ea-GaiMlyYQ" parent="." unique_id=786347452 instance=ExtResource("21_ko2i4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1844296, 3.2388337, -28.74447)
+
+[node name="Cake by Zsky - IIRsjGB8mA" parent="." unique_id=1333685465 instance=ExtResource("22_fbgfp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7498071, 0.4663868, -37.339123)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=830929012]
+transform = Transform3D(4.553043, 0.8889265, -1.6561053e-07, 2.297783, -1.7614025, 0, 3.9803965e-07, 7.771243e-08, 1.8943635, -11.708451, -3.0985649, -37.052303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=393957242]
+shape = SubResource("BoxShape3D_0bbe5")
+
+[node name="Root Scene7" parent="." unique_id=537305590 instance=ExtResource("23_ko2i4")]
+transform = Transform3D(-0.8851316, -0.46534088, 0, 0.46534088, -0.8851316, 0, 0, 0, 1, -10.044124, 2.107832, -40.970142)
+
+[node name="Root Scene8" parent="." unique_id=567592173 instance=ExtResource("24_fbgfp")]
+transform = Transform3D(-0.38574526, 0, 0.92260534, 0, 1, 0, -0.92260534, 0, -0.38574526, -16.652994, 2.5016754, -28.395054)
+
+[node name="Root Scene9" parent="." unique_id=576344749 instance=ExtResource("25_37wjt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.367188, 0.5398762, -44.54532)
+
+[node name="Pie by Poly by Google - eu-vRr2-5dY" parent="." unique_id=1452404871 instance=ExtResource("26_inv1g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.658447, -0.8954451, -53.95616)
+
+[node name="Loaf by Kenney - IYIJGWlOiC" parent="." unique_id=734799754 instance=ExtResource("28_sc7ir")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.63758, -2.9983213, -54.059464)
+
+[node name="Root Scene10" parent="." unique_id=1209190464 instance=ExtResource("29_5nxmh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.106243, -3.1301522, -51.71797)
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=1203909932]
+transform = Transform3D(11.202937, 0, 0, 0, 3.0788822, 0, 0, 0, 1, -14.313987, -1.6219285, 2.6334577)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=1291987114]
+shape = SubResource("BoxShape3D_qscog")

@@ -1,0 +1,498 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dak1i3gj11x35"
+path="res://.godot/imported/Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk.glb-97a5eb79deced966c2e2fce481365db7.scn"
+
+[deps]
+
+source_file="res://assets/3d/Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk.glb"
+dest_files=["res://.godot/imported/Apartment 2 by Gabriele Romagnoli - dtgO5dwwtkk.glb-97a5eb79deced966c2e2fce481365db7.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=50.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"nodes": {
+"PATH:group1001140396": {
+"generate/physics": true
+},
+"PATH:group1011169625": {
+"generate/physics": true
+},
+"PATH:group1019309943": {
+"generate/physics": true
+},
+"PATH:group1019661864": {
+"generate/physics": true
+},
+"PATH:group1028668539": {
+"generate/physics": true
+},
+"PATH:group1053139540": {
+"generate/physics": true
+},
+"PATH:group1063868785": {
+"generate/physics": true
+},
+"PATH:group1071368359": {
+"generate/physics": true
+},
+"PATH:group1075592986": {
+"generate/physics": true
+},
+"PATH:group1089594923": {
+"generate/physics": true
+},
+"PATH:group1104049032": {
+"generate/physics": true
+},
+"PATH:group1126432773": {
+"generate/physics": true
+},
+"PATH:group1136308797": {
+"generate/physics": true
+},
+"PATH:group12166907": {
+"generate/physics": true
+},
+"PATH:group1238570347": {
+"generate/physics": true
+},
+"PATH:group1241120887": {
+"generate/physics": true
+},
+"PATH:group1245666865": {
+"generate/physics": true
+},
+"PATH:group1265978389": {
+"generate/physics": true
+},
+"PATH:group1289570362": {
+"generate/physics": true
+},
+"PATH:group1300422459": {
+"generate/physics": true
+},
+"PATH:group1311953023": {
+"generate/physics": true
+},
+"PATH:group1330736771": {
+"generate/physics": true
+},
+"PATH:group1331219294": {
+"generate/physics": true
+},
+"PATH:group1331706596": {
+"generate/physics": true
+},
+"PATH:group1347753647": {
+"generate/physics": true
+},
+"PATH:group1357782384": {
+"generate/physics": true
+},
+"PATH:group1433746554": {
+"generate/physics": true
+},
+"PATH:group1445713849": {
+"generate/physics": true
+},
+"PATH:group1453542057": {
+"generate/physics": true
+},
+"PATH:group1471020711": {
+"generate/physics": true
+},
+"PATH:group1471174482": {
+"generate/physics": true
+},
+"PATH:group1473759437": {
+"generate/physics": true
+},
+"PATH:group1519900941": {
+"generate/physics": true
+},
+"PATH:group1530296712": {
+"generate/physics": true
+},
+"PATH:group1547827270": {
+"generate/physics": true
+},
+"PATH:group1563477571": {
+"generate/physics": true
+},
+"PATH:group15682012": {
+"generate/physics": true
+},
+"PATH:group1571006952": {
+"generate/physics": true
+},
+"PATH:group1572430251": {
+"generate/physics": true
+},
+"PATH:group1579317768": {
+"generate/physics": true
+},
+"PATH:group1586401229": {
+"generate/physics": true
+},
+"PATH:group1606139564": {
+"generate/physics": true
+},
+"PATH:group1607467123": {
+"generate/physics": true
+},
+"PATH:group1627642349": {
+"generate/physics": true
+},
+"PATH:group162916275": {
+"generate/physics": true
+},
+"PATH:group1633285351": {
+"generate/physics": true
+},
+"PATH:group1634189182": {
+"generate/physics": true
+},
+"PATH:group1652004994": {
+"generate/physics": true
+},
+"PATH:group1656007463": {
+"generate/physics": true
+},
+"PATH:group166077996": {
+"generate/physics": true
+},
+"PATH:group1662053188": {
+"generate/physics": true
+},
+"PATH:group1663470121": {
+"generate/physics": true
+},
+"PATH:group1674435249": {
+"generate/physics": true
+},
+"PATH:group1680601114": {
+"generate/physics": true
+},
+"PATH:group1712095507": {
+"generate/physics": true
+},
+"PATH:group1714016554": {
+"generate/physics": true
+},
+"PATH:group1722554482": {
+"generate/physics": true
+},
+"PATH:group1726402001": {
+"generate/physics": true
+},
+"PATH:group1737561340": {
+"generate/physics": true
+},
+"PATH:group1741639174": {
+"generate/physics": true
+},
+"PATH:group1746347321": {
+"generate/physics": true
+},
+"PATH:group1749908945": {
+"generate/physics": true
+},
+"PATH:group1766515644": {
+"generate/physics": true
+},
+"PATH:group1773481015": {
+"generate/physics": true
+},
+"PATH:group1794030079": {
+"generate/physics": true
+},
+"PATH:group1800172610": {
+"generate/physics": true
+},
+"PATH:group1857544556": {
+"generate/physics": true
+},
+"PATH:group1868673241": {
+"generate/physics": true
+},
+"PATH:group187671265": {
+"generate/physics": true
+},
+"PATH:group1886247228": {
+"generate/physics": true
+},
+"PATH:group1898339029": {
+"generate/physics": true
+},
+"PATH:group1911647186": {
+"generate/physics": true
+},
+"PATH:group1940020436": {
+"generate/physics": true
+},
+"PATH:group1946565987": {
+"generate/physics": true
+},
+"PATH:group1969353276": {
+"generate/physics": true
+},
+"PATH:group198013408": {
+"generate/physics": true
+},
+"PATH:group2027303027": {
+"generate/physics": true
+},
+"PATH:group2040006014": {
+"generate/physics": true
+},
+"PATH:group2054702043": {
+"generate/physics": true
+},
+"PATH:group2071947429": {
+"generate/physics": true
+},
+"PATH:group2096937214": {
+"generate/physics": true
+},
+"PATH:group2102529303": {
+"generate/physics": true
+},
+"PATH:group2135840615": {
+"generate/physics": true
+},
+"PATH:group2144908962": {
+"generate/physics": true
+},
+"PATH:group228203970": {
+"generate/physics": true
+},
+"PATH:group238967664": {
+"generate/physics": true
+},
+"PATH:group243159688": {
+"generate/physics": true
+},
+"PATH:group24350562": {
+"generate/physics": true
+},
+"PATH:group273570533": {
+"generate/physics": true
+},
+"PATH:group274030740": {
+"generate/physics": true
+},
+"PATH:group27678179": {
+"generate/physics": true
+},
+"PATH:group289643995": {
+"generate/physics": true
+},
+"PATH:group309857619": {
+"generate/physics": true
+},
+"PATH:group313480571": {
+"generate/physics": true
+},
+"PATH:group330548787": {
+"generate/physics": true
+},
+"PATH:group345834718": {
+"generate/physics": true
+},
+"PATH:group346189844": {
+"generate/physics": true
+},
+"PATH:group353996542": {
+"generate/physics": true
+},
+"PATH:group359672065": {
+"generate/physics": true
+},
+"PATH:group361363501": {
+"generate/physics": true
+},
+"PATH:group367697708": {
+"generate/physics": true
+},
+"PATH:group36896805": {
+"generate/physics": true
+},
+"PATH:group389755787": {
+"generate/physics": true
+},
+"PATH:group393117388": {
+"generate/physics": true
+},
+"PATH:group397973820": {
+"generate/physics": true
+},
+"PATH:group416238386": {
+"generate/physics": true
+},
+"PATH:group42776751": {
+"generate/physics": true
+},
+"PATH:group442482346": {
+"generate/physics": true
+},
+"PATH:group446878676": {
+"generate/physics": true
+},
+"PATH:group447714539": {
+"generate/physics": true
+},
+"PATH:group459815756": {
+"generate/physics": true
+},
+"PATH:group482610346": {
+"generate/physics": true
+},
+"PATH:group528015770": {
+"generate/physics": true
+},
+"PATH:group530010918": {
+"generate/physics": true
+},
+"PATH:group534979321": {
+"generate/physics": true
+},
+"PATH:group61588214": {
+"generate/physics": true
+},
+"PATH:group616577756": {
+"generate/physics": true
+},
+"PATH:group627659848": {
+"generate/physics": true
+},
+"PATH:group634077015": {
+"generate/physics": true
+},
+"PATH:group635494593": {
+"generate/physics": true
+},
+"PATH:group637848501": {
+"generate/physics": true
+},
+"PATH:group64274035": {
+"generate/physics": true
+},
+"PATH:group646864666": {
+"generate/physics": true
+},
+"PATH:group648199043": {
+"generate/physics": true
+},
+"PATH:group675385321": {
+"generate/physics": true
+},
+"PATH:group684187276": {
+"generate/physics": true
+},
+"PATH:group686872067": {
+"generate/physics": true
+},
+"PATH:group735527060": {
+"generate/physics": true
+},
+"PATH:group740011807": {
+"generate/physics": true
+},
+"PATH:group741955370": {
+"generate/physics": true
+},
+"PATH:group75124782": {
+"generate/physics": true
+},
+"PATH:group772730090": {
+"generate/physics": true
+},
+"PATH:group787289202": {
+"generate/physics": true
+},
+"PATH:group845293311": {
+"generate/physics": true
+},
+"PATH:group866374169": {
+"generate/physics": true
+},
+"PATH:group888194674": {
+"generate/physics": true
+},
+"PATH:group900412067": {
+"generate/physics": true
+},
+"PATH:group901280394": {
+"generate/physics": true
+},
+"PATH:group913886400": {
+"generate/physics": true
+},
+"PATH:group919151411": {
+"generate/physics": true
+},
+"PATH:group924622577": {
+"generate/physics": true
+},
+"PATH:group926800614": {
+"generate/physics": true
+},
+"PATH:group930491115": {
+"generate/physics": true
+},
+"PATH:group93720362": {
+"generate/physics": true
+},
+"PATH:group954963458": {
+"generate/physics": true
+},
+"PATH:group964999814": {
+"generate/physics": true
+},
+"PATH:group969790615": {
+"generate/physics": true
+},
+"PATH:group970727106": {
+"generate/physics": true
+},
+"PATH:group985965200": {
+"generate/physics": true
+},
+"PATH:group997809727": {
+"generate/physics": true
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
+gltf/texture_map_mode=1

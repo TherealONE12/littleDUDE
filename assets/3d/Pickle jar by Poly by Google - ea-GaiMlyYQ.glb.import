@@ -1,0 +1,72 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dpkme8hp4hc3o"
+path="res://.godot/imported/Pickle jar by Poly by Google - ea-GaiMlyYQ.glb-3d12c0d173047aa135680f42f00199c1.scn"
+
+[deps]
+
+source_file="res://assets/3d/Pickle jar by Poly by Google - ea-GaiMlyYQ.glb"
+dest_files=["res://.godot/imported/Pickle jar by Poly by Google - ea-GaiMlyYQ.glb-3d12c0d173047aa135680f42f00199c1.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=0.05
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"nodes": {
+"PATH:Capsule001": {
+"generate/physics": true
+},
+"PATH:Capsule002": {
+"generate/physics": true
+},
+"PATH:Capsule003": {
+"generate/physics": true
+},
+"PATH:Capsule004": {
+"generate/physics": true
+},
+"PATH:Capsule005": {
+"generate/physics": true
+},
+"PATH:Capsule006": {
+"generate/physics": true
+},
+"PATH:Cylinder001": {
+"generate/physics": true
+},
+"PATH:Cylinder002": {
+"generate/physics": true
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
+gltf/texture_map_mode=1
